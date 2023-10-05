@@ -26,3 +26,23 @@ Enter a number: 4
 Enter another number: 25
 4 is not a factor of 25
 """
+import math
+
+
+integer1 = int(input("Enter a number: "))
+integer2 = int(input("Enter another number: "))
+
+if integer1 >= integer2 and integer1 % integer2 == 0:
+    print(f"{integer1} is a factor of {integer2}")
+
+elif integer1 >= integer2 and integer1 % integer2 >= 1:
+    print(f"{integer1} is not a factor of {integer2}")
+
+if integer2 >= integer1 and integer2 % integer1 == 0:
+    print(f"{integer2} is a factor of {integer1}")
+
+if integer1 >= integer2 and integer1 % integer2 >= 1:
+    print(f"{integer1} is not a factor of {integer2}")
+
+
+
